@@ -35,6 +35,7 @@
     height: 260px;
     width: 200px;
     transition: transform 500ms;
+    margin-top: 15px;
 }
 
 .pokecard-main__section{
