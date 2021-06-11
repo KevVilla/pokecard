@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root{
+    --color-primary: #F4F3F4;
+    --color-block: #1EB2A2;
+    --color-card: #ffffff;
+    --color-title: #6D6E6F;
+    --color-text: #FDFDFD;
+    --color-button: #B4B3B4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.pokecard-main{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-primary);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 5fr;
+    justify-items: center;
+
+}
+.pokecard-main__title{
+    color: var(--color-title);
+    align-self: center;
+    font-weight: 300;
+}
+.card{
+    height: 260px;
+    width: 200px;
+    transition: transform 500ms;
+}
+
+.pokecard-main__section{
+    margin-top: 50px;
+    align-self: start;
+    display: flex;
+    width: 900px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.pokecard__section{
+    border-radius: 5px;
+    border: 1px solid var(--color-text);
+    box-shadow: -3px 3px 2px rgba(0, 0, 0, 0.2);
+    background-color: var(--color-card);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+.card-add{
+    border: 1px dashed var(--color-title);
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.pokecard__section--image{
+    width: 100%;
+}
+.pokecard__section--title{
+    color: var(--color-title);
+    font-weight: 300;
+}
+
+
+/* ESTILOS PARA AÑADIR POKEMON */
+.pokecard-add__container{
+    background-color: var(--color-primary);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.pokecard-add{
+    display: grid;
+    height: 90vh;
+    grid-template-columns: 350px;
+    grid-template-rows: 8fr 1fr;
+    row-gap: 40px;
+}
+.pokecard-add__form--container{
+    background-color: var(--color-card);
+    box-shadow: -3px 3px 2px rgba(0, 0, 0, 0.2);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 110px 110px 1fr;
+}
+.pokecard-add__form{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-block);
+    width: 90%;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+}
+.pokecard-add__form > label{
+    color: var(--color-title);
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.pokecard-add__form-image{
+    background-color: var(--color-primary);
+    width: 90%;
+    height: 90%;
+}
+
+.pokecard-add__form input[type="text"]{
+    width: 100%;
+    color: var(--color-card);
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 20px;
+}
+.pokecard-add__form:first-child input[type="text"]{
+    font-size: 26px;
+}
+.pokecard-add__form input[type="text"]:focus{
+    outline: none;
+}
+.pokecard-add__buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.pokecard-add__button:first-child{
+    color: var(--color-title);
+}
+.pokecard-add__button:nth-child(2){
+    background-color: var(--color-block);
+    color: var(--color-card);
+    border-radius: 5px;
+}
+.pokecard-add__button{
+    width: 80px;
+    height: 40px;
+    margin-left: 20px;
+    border-color: transparent;
+    font-size: 18px;
+    cursor: pointer;
+}
+.pokecard-add__buttons a{
+    margin-right: auto;
+}
+
+.pokecard-crud__form{
+    background-color: var(--color-primary);
+}
+.pokecard-add__form input[type="text"]{
+    color: var(--color-title);
+}
+
+
+/* ESTILOS JAVASCRIPT */
+#pokecard-add--image{
+    height: 100%;
+    width: 100%;
+}

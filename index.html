@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poke-card</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="pokecard-main">
+        <h1 class="pokecard-main__title">There are 3 pokemons in your pokedex</h1>
+        <section class="pokecard-main__section" id="pokecards-main">
+            <!-- <div class="card pokecard__section">
+                <img class="pokecard__section--image" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png" alt="">
+                <h2 class="pokecard__section--title">Mewtwo</h2>
+            </div>
+            <div class="card pokecard__section">
+                <img class="pokecard__section--image" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" alt="">
+                <h2 class="pokecard__section--title">Pikachu</h2>
+            </div>
+            <div class="card pokecard__section">
+                <img class="pokecard__section--image" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="">
+                <h2 class="pokecard__section--title">Bulbasaur</h2>
+            </div> -->
+
+            <div class="card card-add">
+                <a href="" class="card-add__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="20" height="20" x="0" y="0" viewBox="0 0 469.33333 469.33333" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path xmlns="http://www.w3.org/2000/svg" d="m437.332031 192h-160v-160c0-17.664062-14.335937-32-32-32h-21.332031c-17.664062 0-32 14.335938-32 32v160h-160c-17.664062 0-32 14.335938-32 32v21.332031c0 17.664063 14.335938 32 32 32h160v160c0 17.664063 14.335938 32 32 32h21.332031c17.664063 0 32-14.335937 32-32v-160h160c17.664063 0 32-14.335937 32-32v-21.332031c0-17.664062-14.335937-32-32-32zm0 0" fill="#6D6E6F" data-original="#000000" style="" class="" /></g></svg>
+                </a>
+                <h2 class="pokecard__section--title">Add new</h2>
+            </div>
+        </section>
+    </main>
+    <div class="pokecard-add__container">
+        <div class="pokecard-add">
+            <div class="pokecard-add__form--container">
+                <div class="pokecard-add__form">
+                    <label for="name">NAME</label>
+                    <input type="text" name="name" id="name-pokemon">
+                </div>
+                <div class="pokecard-add__form">
+                    <label for="image-url">IMAGE URL</label>
+                    <input type="text" name="image-url" id="name-image">
+                </div>
+                <div class="pokecard-add__form-image" id="pokecard-add__form-image">
+                    <!-- <img src="" alt="" id="image-pokemon"> -->
+                </div>
+            </div>
+            <div class="pokecard-add__buttons">
+                <button class="pokecard-add__button">Cancel</button>
+                <button class="pokecard-add__button" id="button-add">Add</button>
+            </div>
+        </div>
+    </div>
+    <div class="pokecard-add__container">
+        <div class="pokecard-add">
+            <div class="pokecard-add__form--container">
+                <div class="pokecard-crud__form pokecard-add__form">
+                    <label for="name">NAME</label>
+                    <input type="text" name="name" id="">
+                </div>
+                <div class="pokecard-crud__form pokecard-add__form">
+                    <label for="image-url">IMAGE URL</label>
+                    <input type="text" name="image-url" id="">
+                </div>
+                <div class="pokecard-add__form-image">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="pokecard-add__buttons">
+                <a href="">
+                    <svg id="Capa_1" enable-background="new 0 0 512.016 512.016" height="22" fill="#f12929" viewBox="0 0 512.016 512.016" width="22" xmlns="http://www.w3.org/2000/svg"><g><path d="m448.199 164.387h-236.813l106.048-106.048c5.858-5.858 5.858-15.356 0-21.215l-26.872-26.872c-13.669-13.669-35.831-13.669-49.501 0l-27.63 27.631-14.144-14.144c-15.596-15.597-40.975-15.596-56.572 0l-55.158 55.158c-15.597 15.597-15.597 40.976 0 56.573l14.143 14.144-27.63 27.63c-13.669 13.669-13.669 35.831 0 49.501l26.872 26.872c5.857 5.858 15.356 5.859 21.214 0l38.021-38.021v231.416c0 35.901 29.104 65.005 65.005 65.005h158.012c35.901 0 65.005-29.104 65.005-65.005zm-325.284-35.989-14.143-14.143c-3.899-3.899-3.899-10.244 0-14.144l55.158-55.158c3.9-3.9 10.245-3.899 14.143 0l14.143 14.144zm129.533 299.612c0 8.285-6.716 15.001-15.001 15.001s-15.001-6.716-15.001-15.001v-179.616c0-8.285 6.716-15.001 15.001-15.001s15.001 6.716 15.001 15.001zm66.741 0c0 8.285-6.716 15.001-15.001 15.001s-15.001-6.716-15.001-15.001v-179.616c0-8.285 6.716-15.001 15.001-15.001s15.001 6.716 15.001 15.001zm66.741 0c0 8.285-6.716 15.001-15.001 15.001s-15.001-6.716-15.001-15.001v-179.616c0-8.285 6.716-15.001 15.001-15.001s15.001 6.716 15.001 15.001z"/><path d="m320.898 113.548c-9.151 3.19-15.571 11.361-16.631 20.842h143.932v-24.932c0-17.119-16.845-29.167-33.022-23.682l-93.968 27.672c-.101.029-.211.069-.311.1z"/></g></svg>
+                </a>
+                <button class="pokecard-add__button">Cancel</button>
+                <button class="pokecard-add__button">Add</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
